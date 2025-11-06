@@ -1,0 +1,112 @@
+/* styles.css – Nexus Journal site */
+
+:root {
+  --bg: #0f172a;
+  --fg: #ffffff;
+  --accent: #2563eb;
+  --muted: #64748b;
+  --panel: #f1f5f9;
+  --text: #0b1220;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: #fff;
+}
+
+header {
+  background: var(--bg);
+  color: var(--fg);
+  padding: 24px 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+}
+
+nav {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+h1, h2, h3 { margin-top: 0; }
+
+.section {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin: 24px 0;
+}
+
+ul, ol { margin: 0; padding-left: 20px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: #0f172a;
+  color: #fff;
+}
+
+footer {
+  background: #0b1220;
+  color: #cbd5e1;
+  padding: 24px 0;
+  margin-top: 24px;
+  font-size: 14px;
+}
